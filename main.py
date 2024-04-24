@@ -129,6 +129,15 @@ def blog():
     return render_template("blog.html")
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
 
-    app.run(debug=True)
+#     app.run(debug=True)
+
+# if __name__ == '__main__':
+#     # Run the app using Gunicorn
+#     import os
+#     port = int(os.environ.get("PORT", 5000))
+#     app.run(host='0.0.0.0', port=port)
+if __name__ == '__main__':
+    # Run the app using Flask's built-in server on port 8080
+    app.run(host='0.0.0.0', port=8080)
